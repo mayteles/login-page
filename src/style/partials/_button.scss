@@ -1,2 +1,13 @@
 @use './variables' as *;
 @use './mixins' as *;
+
+.form {
+    &__btn {
+        background-color: $alice;
+        @include btn-radius;
+        color: $white;
+    }
+    &__btn:hover {
+        background-color: #0398fc;
+    }
+}
