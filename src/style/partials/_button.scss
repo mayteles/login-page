@@ -6,6 +6,7 @@
         background-color: $alice;
         @include btn-radius;
         color: $white;
+        margin: 50px;
     }
     &__btn:hover {
         background-color: #0398fc;

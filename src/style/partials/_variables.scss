@@ -1,7 +1,11 @@
 // breakpoint for different size screens
+// can be use once for desktop and tablet development
 $tablet-breakpoint: 48rem;
 $desktop-breakpoint: 80rem;
 
 // primary colors
 $alice: #0377fc;
 $white: #ffffff;
+
+// secondary colors
+$lightgray: #ccc;
