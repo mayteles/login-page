@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +10,23 @@
 </head>
 <body>
     <main>
-        <form class="form" action="action_page.php" method="post">
+        <form class="form" id="form" action="action_page.html" method="post">
             <h1 class="form__heading">Welcome Back</h1>
-            <label class="form__label" for="email">Username*</label>
+            <div class="input-group">
+                <label class="form__label" for="email">Username*</label>
+                <br>
+                <input class="form__input" type="email" id="email" placeholder="Enter Username" name="email" required autocomplete="off">
+            </div>
             <br>
-            <input class="form__input" type="email" id="email" placeholder="Enter Username" name="email" required>
+            <div class="input-group">
+                <label class="form__label" for="password">Password*</label>
+                <br>
+                <input class="form__input" type="password" id="password" placeholder="Enter Password" name="password" required>
+            </div>
             <br>
-            <label class="form__label" for="password">Password*</label>
+            <label class="form__label"><input class="form__checkbox" type="checkbox" name="remember">Remember me</label>
             <br>
-            <input class="form__input" type="password" id="password" placeholder="Enter Password" name="password" required>
-            <br>
-            <label class="form__label"><input class="form__checkbox" type="checkbox" checked="checked" name="remember">Remember me</label>
-            <br>
-            <button class="form__btn" type="submit">Login</button>
+            <button class="form__btn" type="button" value="log in" id="login">Login</button>
            
             <section class="section">
                 <a href="" class="section__a">Forgot password?</a>
@@ -31,5 +36,8 @@
             </section>
         </form>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
