@@ -3,6 +3,5 @@
 *.sass.map
 *.scss.map
 *.css
-*.js
 *.js.map
 .cache
