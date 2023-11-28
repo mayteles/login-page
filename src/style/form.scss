@@ -1,2 +1,63 @@
 @use './partials/forwarding' as *;
 
+// resetting css 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    border: none;
+}
+li, a {
+    list-style: none;
+    text-decoration: none;
+    a:visited {
+        color: black;
+    }
+
+}
+
+// login page style
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../assets/images/login-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 300px;
+}
+
+.form {
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    &__heading {
+        text-align: center;
+        padding: 40px;
+    }
+    &__label {
+        width: 100%;
+        padding: 0 50px;
+    }
+    &__input {
+        border: none;
+        width: 80%;
+        padding: 10px;
+        margin: 4px 50px 10px 50px;
+        background-color: #f4f4f4;
+    }
+    &__checkbox {
+        margin-right: 5px;
+    }
+}
+
+.section {
+    text-align: center;
+    &__a {
+        color: lightgray;
+    }
+}
